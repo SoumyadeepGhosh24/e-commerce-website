@@ -1,22 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>VillageHaat Ecom_Web</title>
+    <link rel="stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<body>
+    <section id="header">
+        <a href="a"><img src="img/logo1.png" class="logo" alt=""></a>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+        <div>
+            <ul id="navbar">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="shop.html">Shop</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li id="lg-bag"> <a class="active" href="cart.html"><i class="far fa-shopping-cart"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
 
-    <body>
+    <section id="page-header" class="about-header">
+        
+        <!-- <img class="backgroundimg" src="img/about/banner.png" alt=""> -->
+        <h2>#let's_talk</h2>
+        <p>Leave a message. We love to hear from you!</p>
+    </section>
 
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>SubTotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronout T-shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronout T-shirts</td>
+                    <td>$135.45</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$135.45</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f4.jpg" alt=""></td>
+                    <td>Cartoon Astronout T-shirts</td>
+                    <td>$120.69</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$120.69</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <script src="script.js"></script>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 374.23</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 374.23</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Check-out</button>
+        </div>
+    </section>
 
-    </body>
+    <footer class="section-p1">
+        <div class="col">
+            <img src="img/logo1.png" alt="">
+            <h4><Strong>Contact</Strong></h4>
+            <p><Strong>Address: </Strong> Janai Chanditala-II, Hooghly, West Bengal-712304</p>
+            <p><Strong>Phone: </Strong> (+91)96743-86744</p>
+            <p><Strong>Hours: </Strong>10:00-17:00, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/soumyadeep.ghosh.1804109" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/Soumyad43504533" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/soumyadeepghosh78/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/s-g-a38504202/" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>        
+            </div>
+        </div>
+        <div class="col">
+            <h4><Strong>About</Strong></h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>     
+        </div>
+        <div class="col">
+            <h4><Strong>My Account</Strong></h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Order</a>
+            <a href="#">Help</a>     
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copywrite">
+            <p>2024, Soumyadeep@Ghosh E-Commerce-Website</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 
 </html>
