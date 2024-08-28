@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+#header .logo {
+  margin-left: 5px;
+}
+
+#header h1 {
+  /* margin: 0 auto; */
+  padding: 3px;
+  padding-left: -2px;
+  flex-basis: 110%;
+  text-align: center;
+}
+
+#current-blog {
+  background-color: #f7f7f7;
+  padding: 2em;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#current-blog h1 {
+  font-size: 26px;
+  text-align: center;
+}
+
+#current-blog h2 {
+  font-size: 26px;
+  margin-top: 0;
+}
+
+#current-blog .blog-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#current-blog .blog-text {
+  flex-basis: 60%;
+}
+
+#current-blog .blog-image {
+  /* flex-basis: 30%; */
+  width: 30%;
+  height: 30%;
+}
+
+#current-blog .blog-image img {
+  width: 80%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+#other-blogs {
+  background-color: #f7f7f7;
+  padding: 2em;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 4fr);
+  grid-gap: 20px;
+}
+
+.blog-card {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h2 {
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.blog-card p {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.blog-card button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.blog-card button:hover {
+  background-color: #444;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .blog-grid {
+      grid-template-columns: 1fr;
+  }
+}
